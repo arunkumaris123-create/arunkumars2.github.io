@@ -1,218 +1,359 @@
 <!DOCTYPE html>
-<html lang=**n">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Arunkumar S | IT Manager</title>
 
+<meta name="description"
+content="Arunkumar S - IT Manager specializing in Microsoft 365, Azure, Cybersecurity, Infrastructure Management and Digital Transformation">
+
+https://fonts.googleapis.com
+https://fonts.gstatic.com
+
 <style>
+
+:root{
+    --primary:#0078d4;
+    --secondary:#005a9e;
+    --bg:#f4f6f9;
+    --card:#ffffff;
+    --text:#333;
+}
+
+.dark{
+    --bg:#121212;
+    --card:#1f1f1f;
+    --text:#ffffff;
+}
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
 }
 
 body{
-    background:#f5f7fa;
-    color:#333;
-    line-height:1.6;
+    font-family:Segoe UI,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    transition:.3s;
 }
 
 header{
-    background:linear-gradient(135deg,#0078D4,#005A9E);
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
     color:white;
     text-align:center;
-    padding:80px 20px;
+    padding:70px 20px;
 }
 
-header h1{
+.profile-pic{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+h1{
     font-size:3rem;
 }
 
-header p{
-    margin-top:10px;
+.subtitle{
     font-size:1.2rem;
+    margin-top:10px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:50px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:30px;
+    color:var(--primary);
+}
+
+.card{
+    background:var(--card);
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    margin-bottom:20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
 }
 
 .btn{
     display:inline-block;
-    margin-top:20px;
     padding:12px 20px;
+    margin:10px;
     background:white;
-    color:#0078D4;
-    text-decorat**n:none;
+    color:var(--primary);
+    font-weight:bold;
     border-radius:6px;
-  **font-weight:bold;
+    text-decoration:none;
 }
 
-section{
-   **ax-width:1100px;
-    margin:auto;**   padding:60px 20px;
+.btn-dark{
+    background:var(--primary);
+    color:white;
 }
 
-.section**itle{
+.skills{
     text-align:center;
-    **rgin-bottom:30px;
-    color:#005A**;
 }
 
-.card-container{
-    display**rid;
-    grid-template-columns:re**at(auto-fit,minmax(250px,1fr));
- ** gap:20px;
-}
-
-.card{
-    backgrou**:skyblue;
-    padding:25px;
-    bor**r-radius:10px;
-    box-shadow:0 2** 10px rgba(0,0,0,.1);
-}
-
-.skills **an{
+.skills span{
     display:inline-block;
-   **ackground:#0078D4;
-    color:whit**
-    padding:8px 12px;
-    margin**px;
-    border-radius:20px;
-    f**t-size:14px;
+    padding:10px 15px;
+    margin:6px;
+    border-radius:30px;
+    background:var(--primary);
+    color:white;
+}
+
+.timeline{
+    border-left:4px solid var(--primary);
+    padding-left:20px;
+}
+
+.timeline-item{
+    margin-bottom:25px;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+form button{
+    border:none;
+    cursor:pointer;
 }
 
 footer{
-    backg**und:#0d1117;
-    color:Skyblue;
-   **ext-align:center;
-    padding:25p**
+    background:#0d1117;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 
-a{
-    color:#0078D4;
-    tex**decoration:none;
+#darkModeBtn{
+    position:fixed;
+    top:20px;
+    right:20px;
+    background:white;
+    border:none;
+    padding:12px;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:18px;
 }
+
+@media(max-width:768px){
+    h1{
+        font-size:2rem;
+    }
+}
+
 </style>
-</hea**
+</head>
+
 <body>
 
-<header>
-    <h1>Arunkumar S</h1>
-    <p>IT Manager | IT Infrastructure | Networking | Cybersecurity | Team Leadership | Cloud & Security </p>
+<button id="darkModeBtn">🌙</button>
 
-    <a class="btn"
- **    href="https://www.linkedin.com/in/arunkumars2/"
-       target="ank">
-       View LinkedIn
-    </**
+<header>
+
+profile.jpg
+
+<h1>Arunkumar S</h1>
+
+<p class="subtitle">
+IT Manager | Microsoft 365 | Azure | Cybersecurity | Infrastructure Operations
+</p>
+
+<a href="https://www.linkedin.com/in/arunkumars2/"
+target="_blank"
+class="btn">
+LinkedIn Profile
+</a>
+
+Arunkumar_Resume.pdf
+Download Resume
+</a>
+
 </header>
 
-<section>
-    <h2 cla**="section-title">About Me</h2>
-
-  <div class="card">
-        <p>
-      Experienced IT Manager specializing in Microsoft 365,
-        Azure Cloud, IT Infrastructure Managment, End User
-        Services, Cybersecurity, Team Leadership, and Digital
-        Transformation Initiatives.
-        </p>
-    </div>
-</action>
+<div class="container">
 
 <section>
-    <h2 class="action-title">Core Skills</h2>
 
-  <div class="skills" style="text-a**gn:center;">
-        <span>Microsoft 365</span>
-        <span>Azure</span>
-        <span>IT Operations</span>
-        <span>Infrastructure</span>
-        <span>Cybersecurity</span>
-        <span>Service Management</span>
-        <span>Project Management</span>
-        <span>Team Leadership</span>
-        <span>PowerShell</span>
-        <span>Cloud Migration</span>
-    </div>
-<section>
-<section>
-    <h2 class="sec**on-title">Professional Highlights>
+<h2 class="section-title">About Me</h2>
 
-    <div class="card-contains">
+<div class="card">
 
-        <div class="card">
-  **        <h3>Microsoft 365</h3>
-  **        <p>
-            Administration, governance,
-            security, and user enablement.
-        **  </p>
-        </div>
+<p>
+Experienced IT Manager with expertise in Microsoft 365, Azure Cloud,
+Cybersecurity, Infrastructure Management, IT Operations, Service Delivery
+and Digital Transformation initiatives. Proven ability to lead technical
+teams, manage enterprise infrastructure, and deliver secure, scalable
+business solutions.
+</p>
 
-        <d** class="card">
-            <h3>Azure Cloud</h3>
-            <p>
-    **      Cloud adoption, migration,
-**          optimization, and operations.
-            </p>
-        </d**>
+</div>
 
-        <div class="card">
-   **       <h3>Infrastructure Management</h3>
-            <p>
-          **Data center, endpoint,
-          **networking, and server operations**            </p>
-        </div>
-
-**      <div class="card">
-        **  <h3>Leadership</h3>
-           **p>
-            Building high-performing teams
-            and driving business outcomes.
-            </**
-        </div>
-
-    </div>
-</sec**on>
-
-<section>
-    <h2 class="sec**on-title">Projects & Achievements**h2>
-
-    <div class="card">
-     ** <ul>
-            <li>Microsoft 365 implementation and optimization</li>
-            <li>Cloud transformation initiatives</li>
-            <li>Security and compliance improvements</li>
-            <li>Infrastructure modernization programs</li>
-            <li>IT service delivery enhancements</li>
-        </ul>
-    </div>
 </section>
 
 <section>
-    <h2 class="section-title">Contact</h2>
 
-    <div class="card">
-        <p><strong>LinkedIn:</strong></p>
+<h2 class="section-title">Core Skills</h2>
 
-        <p>
-            <a href="https://www.linkedin.com/in/arunkumars2/"
-               target="_blank">
-               linkedin.com/in/arunkumars2
-            </a>
-        </p>
+<div class="skills">
 
-        <br>
+<span>Microsoft 365</span>
+<span>Azure</span>
+<span>Windows Server</span>
+<span>Active Directory</span>
+<span>Microsoft Entra ID</span>
+<span>Cybersecurity</span>
+<span>Network Administration</span>
+<span>IT Operations</span>
+<span>Service Management</span>
+<span>PowerShell</span>
+<span>Cloud Migration</span>
+<span>Team Leadership</span>
 
-        <p>
-        Open to collaboration, technology leadership
-        discussions, and digital transformation initiatives.
-        </p>
-    </div>
+</div>
+
 </section>
 
-<footer>
-    <p>© 2026 Arunkumar S | IT Manager</p>
-</footer>
+<section>
 
-</body>
-</html>
+<h2 class="section-title">Certifications</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Microsoft 365</h3>
+<p>M365 Administration & Security</p>
+</div>
+
+<div class="card">
+<h3>Microsoft Azure</h3>
+<p>Cloud Infrastructure & Identity</p>
+</div>
+
+<div class="card">
+<h3>Cybersecurity</h3>
+<p>Security Operations & Compliance</p>
+</div>
+
+<div class="card">
+<h3>IT Service Management</h3>
+<p>ITIL and Service Delivery</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Experience Timeline</h2>
+
+<div class="card timeline">
+
+<div class="timeline-item">
+<h3>IT Manager</h3>
+<p>
+Leading IT infrastructure operations, Microsoft 365 administration,
+Azure services, cybersecurity, and service delivery initiatives.
+</p>
+</div>
+
+<div class="timeline-item">
+<h3>Senior IT Operations</h3>
+<p>
+Managed enterprise infrastructure, networking, servers,
+and user support services.
+</p>
+</div>
+
+<div class="timeline-item">
+<h3>Systems Administration</h3>
+<p>
+Windows Server, Active Directory, DNS, DHCP,
+networking, and end-user support.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Project Case Studies</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Microsoft 365 Migration</h3>
+<p>
+Successfully implemented and managed Microsoft 365 services,
+enhancing productivity, collaboration, and security.
+</p>
+</div>
+
+<div class="card">
+<h3>Infrastructure Modernization</h3>
+<p>
+Upgraded servers, storage, and network systems,
+improving performance and reliability.
+</p>
+</div>
+
+<div class="card">
+<h3>Cybersecurity Improvement</h3>
+<p>
+Implemented phishing awareness programs, security controls,
+and compliance-driven initiatives.
+</p>
+</div>
+
+<div class="card">
+<h3>IT Service Optimization</h3>
+<p>
+Improved response times and operational efficiency through
+service management best practices.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Contact Me</h2>
+
+<div class="card">
+
+https://formsubmit.co/YOUR_EMAIL@gmail.com
+
+<input type
