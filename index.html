@@ -240,6 +240,47 @@ button{
     cursor:pointer;
 }
 
+
+.contact-icons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.contact-link{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:14px 24px;
+    text-decoration:none;
+    color:#ffffff;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(0,212,255,0.3);
+    border-radius:50px;
+    transition:all 0.3s ease;
+    backdrop-filter:blur(10px);
+}
+
+.contact-link i{
+    font-size:22px;
+    color:#00d4ff;
+}
+
+.contact-link:hover{
+    transform:translateY(-4px);
+    background:#00d4ff;
+    color:#000;
+    box-shadow:0 0 20px rgba(0,212,255,0.6);
+}
+
+.contact-link:hover i{
+    color:#000;
+}
+
+
+    
 .contact-link{
     display:flex;
     align-items:center;
