@@ -239,7 +239,50 @@ button{
     font-weight:bold;
     cursor:pointer;
 }
+
+
     
+.contact-icons{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.contact-link{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    color:white;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(0,212,255,0.3);
+    transition:all 0.3s ease;
+}
+
+.contact-link i{
+    font-size:22px;
+    color:#00d4ff;
+}
+
+.contact-link:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 20px rgba(0,212,255,0.4);
+    background:#00d4ff;
+    color:#000;
+}
+
+.contact-link:hover i{
+    color:#000;
+}
+
+
+
+
+
 footer{
     text-align:center;
     margin-top:60px;
@@ -474,6 +517,27 @@ Focused on securing enterprise environments while enabling business growth.
 +91-8792227207 / arunkumaris123@gmail.com
 
 
+
+<div class="contact-icons">
+
+    arunkumaris123@gmail.com
+        <i class="fa-solid fa-envelope"></i>
+        Email Me
+    </a>
+
+    https://wa.me/918792227207
+        <i class="fa-brands fa-whatsapp"></i>
+        WhatsApp
+    </a>
+
+    <a href="https://www.linkedin.com/in/arunkumars2/" class="contact-link" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+        LinkedIn
+    </a>
+
+</div>
+
+    
 
 </form>
 
